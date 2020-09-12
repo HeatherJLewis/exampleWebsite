@@ -1,0 +1,20 @@
+{
+  "name": "exampleWebsite",
+  "version": "1.0.0",
+  "description": "Apprenticeship: Web Development Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeatherJLewis/exampleWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeatherJLewis/exampleWebsite/issues"
+  },
+  "homepage": "https://github.com/HeatherJLewis/exampleWebsite#readme"
+}

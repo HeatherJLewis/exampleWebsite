@@ -4,30 +4,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HeatherJLewis</title>
         <link rel="shortcut icon" href="sunshine.ico" type="image/x-icon">
-        <style>
-            .myTable {
-                background-color: cadetblue;
-            }
-
-            td {
-                text-align: center;
-            }
-
-            td, th {
-                border: solid grey 1px;
-            }
-
-            table {
-                border: solid black 2px;
-                width: 800px;
-                align-items: center;
-            }
-        </style>
+        <link rel="stylesheet" href="./index.css" >
+        <style></style>
     </head>
     <body>
-        <h1>HeatherJLewis</h1>
-        <hr>
-        <h2>
+        <h1>Heather J. Lewis</h1>
+        <h2 class="first">
             Languages I am learning or would like to learn:
         </h2>
         <table class="myTable">
@@ -59,22 +41,49 @@
                 <td>mySQL</td>
             </tr>
         </table>
-        <hr>
-        <h3>Personal Interests</h3>
-        <h4>Lino Cutting</h4>
-        <p>Lino printing is a form of fine art printmaking where the printing plate is cut into lino. Yes, lino as in linoleum, as in the floor covering. The lino is then inked, a piece of paper placed over it, and then run through a printing press or pressure applied by hand to transfer the ink to the paper. The result, a linocut print. Because it's a smooth surface, the lino itself doesn't add texture to the print.</p>
+        <h2 class="second">Personal Interests</h2>
+        <h4 style="text-align: center;">Lino Cutting</h4>
+        <div class="hobbyText">
+            <p>Lino printing is a form of fine art printmaking where the printing plate is cut into lino. Yes, lino as in linoleum, as in the floor covering. The lino is then inked, a piece of paper placed over it, and then run through a printing press or pressure applied by hand to transfer the ink to the paper. The result, a linocut print. Because it's a smooth surface, the lino itself doesn't add texture to the print.</p>
 
-        <p>Linoleum was invented in 1860 by a British rubber manufacturer, Fredrick Walton, looking for a cheaper product. Lino is made from linseed oil and Walton got the idea "by observing the skin produced by oxidized linseed oil that forms on paint." Very basically, linseed oil is heated in thin layers which thicken and become rubbery; this is then pressed onto a mesh of coarse threads to help hold it together in sheets. It didn't take long after the invention of lino for artists to decide it was a cheap and easy material for printmaking. Lacking any art historical tradition, artists were free to use it however they wished, without facing negative criticism.</p>
-        <hr>
-        <h3>Favourite Foods</h3>
+            <p><u>Linoleum</u> was invented in 1860 by a British <i>rubber</i> manufacturer, <em>Fredrick Walton</em>, looking for a <strong>cheaper</strong> product. Lino is made from linseed oil and Walton got the idea "by observing the skin produced by oxidized linseed oil that forms on paint." Very basically, linseed oil is heated in thin layers which thicken and become rubbery; this is then pressed onto a mesh of coarse threads to help hold it together in sheets. It didn't take long after the invention of lino for artists to decide it was a cheap and easy material for printmaking. Lacking any art historical tradition, artists were free to use it however they wished, without facing negative criticism.</p>
+        </div>
+        <h2>Favourite Foods</h2>
         <ol>
-            <li>gnocchi</li>
-            <li>tiramisu</li>
-            <li>lasagne</li>
+            <li>Italian</li>
+                <ul>
+                    <li>gnocchi</li>
+                    <li>tiramisu</li>
+                    <li>lasagne</li>
+                </ul>
+            <li>Chinese</li>
+            <li>Spanish</li>
         </ol>
-        <hr>
-        <h3>Tigger</h3>
-        <img style="max-width: 20%" src="./IMG_20190914_091905.jpg" alt="HeatherJLewis">
+        <a href="#form">Tell me about your favourite foods!</a>
+        <h2>Links</h2>
+        <a href="http://www.bbc.co.uk" title="BBC Website">The BBC Website</a>
+        <br>
+        <a href="./myHobbies.html">My Hobbies</a>
+        <h3 id="myCat">Tigger</h3>
+        <img class="catImage" style="max-width: 20%" src="./IMG_20190914_091905.jpg" alt="HeatherJLewis">
         <p>I love my cat!</p>
+        <h2>Tell me about your favourite foods!</h2>
+        <form id="form" action="" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="userName" value="Your Name">
+                </li>
+                <li>
+                    <label for="food">Favourite food:</label>
+                    <textarea id="food" name="favouriteFood">Add your favourite food</textarea>
+                </li>
+            </ul>
+            <button class="submitButton" type="submit">
+                Send me your favourite foods!
+            </button>
+            <button class="resetButton" type="reset">Reset the form</button>
+            <button type="button">An interesting custom button</button>
+        </form>
     </body>
 </DOCTYPE>

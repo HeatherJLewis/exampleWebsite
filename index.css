@@ -1,0 +1,99 @@
+body {
+    border: solid black 5px;
+    padding: 10px;
+    background-color: rgba(229, 234, 235, 0.959);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    border: solid rgb(6, 49, 13) 3px;
+    padding: 20px;
+    border-radius: 50px 20px;
+    background-color: rgb(103, 155, 129);
+}
+
+h2 {
+    text-align: center;
+    border: dotted darkblue 2px;
+    margin: 20px;
+    padding: 10px;
+}
+
+p::spelling-error {
+    color: red;
+}
+
+.first {
+    color: blueviolet
+}
+
+h2.second {
+    color: green;
+}
+
+.hobbyText {
+    background-color: palegoldenrod;
+    padding: 10px 20px
+}
+
+.hobbyText p:first-child::first-line {
+    color: brown;
+}
+
+.hobbyText p::first-line {
+    text-decoration: underline;
+}
+
+h3:hover {
+    visibility: visible;
+    background-color: greenyellow;
+    border: solid black 10px;
+    text-align: center;
+}
+
+a:visited {
+    color: rebeccapurple;
+}
+
+ol > ul > li{
+    color: red;
+    margin: 20px;
+}
+
+strong {
+    color: slateblue;
+}
+
+.myTable {
+    background-color: cadetblue;
+    border: solid black 2px;
+    width: 800px;
+    align-items: center;
+}
+
+td {
+    text-align: center;
+}
+
+td, th {
+    border: solid grey 1px;
+}
+
+button {
+    margin: 20px;
+    color: blue;
+    background-color: goldenrod;
+    padding: 20px;
+    border: solid darkgray 2px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+button.resetButton {
+    color: red;
+}
+
+button.submitButton {
+    color:green;
+}
